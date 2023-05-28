@@ -1,0 +1,79 @@
+   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    height: 600px;
+    position: relative; 
+    background-color: rgba(0, 81, 128, 0.521);
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-left: 300px;
+  }
+  
+  .form-container {
+    display: none;
+     background-image: url(../formulaire/20943446.jpg);
+    background-size: cover; 
+    border-radius: 10px;
+    box-shadow:0px 1px 20px rgba(0, 0, 0, 0.877);
+    position: absolute;
+    border: 0px solid green;
+    width: 500px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: slide_entrant 0.5s forwards;
+
+  }
+  
+  @keyframes slide_entrant {
+    0% {
+      top: -500px;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+ 
+  #user-icon {
+    position: absolute; 
+    font-size: 30px;
+    color: black;
+    top: 40px;
+    left: 46%;
+    transform: translateX(50%);
+  }
+  
+  .container.active .form-container {
+    display: block;
+    animation: slide_entrant 0.5s forwards;
+  }
+  
+ .form {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+  .btn {
+    display: block;
+    background-color: rgba(0, 81, 128, 0.788);
+    border: 1px solid grey;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+  } 
+  
+  
+
+  .btn:hover{
+    transition: .3s ease-in;
+    color: antiquewhite;
+    font-weight: 100;
+  }
